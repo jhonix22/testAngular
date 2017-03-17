@@ -1,4 +1,8 @@
+// Services
+import {ServicesProviderService} from '../services-provider.service';
+
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-services',
@@ -6,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
+  title: string;
 
-  constructor() { }
+  constructor(private _servicesProvider: ServicesProviderService) { }
 
   ngOnInit() {
+    this.title = this._servicesProvider.getServices()
   }
 
 }
