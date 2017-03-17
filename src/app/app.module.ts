@@ -12,12 +12,14 @@ import { ServicesComponent } from './services/services.component';
 
 // Services
 import {ServicesProviderService} from './services-provider.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
